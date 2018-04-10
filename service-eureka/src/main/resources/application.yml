@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+logging:
+  path: logs
+server:
+  port: 8761
+  undertow:
+    accesslog:
+      enabled: true
+      dir: logs/server
+spring:
+  application:
+    name: service-eureka
+  profiles:
+    active: dev  #指定启动 application-dev.yml 文件
