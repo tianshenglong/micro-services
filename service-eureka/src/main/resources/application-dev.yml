@@ -6,4 +6,4 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.ip-address}:${server.port}/eureka/
   server:
-    enable-self-preservation: false
+    enable-self-preservation: true

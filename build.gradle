@@ -77,7 +77,6 @@ project(":service-eureka") {
     }
 }
 
-
 project(":api-user") {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
@@ -91,7 +90,6 @@ project(":api-user") {
         compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
         compile('org.springframework.cloud:spring-cloud-starter-openfeign')
         compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
-        compile "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisSpringBootStarterVersion}"
         compile("org.springframework.boot:spring-boot-starter-undertow")
 
         compile "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
