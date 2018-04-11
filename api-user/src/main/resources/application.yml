@@ -22,21 +22,21 @@ spring:
     name: api-user
   profiles:
     active: dev
-#feign:
-#  hystrix:
-#    enabled: true
-#  okhttp:
-#    enabled: true
-#hystrix:
-#  threadpool:
-#    default:
-#      coreSize: 200
-#  command:
-#    default:
-#      execution:
-#        isolation:
-#          thread:
-#            timeoutInMilliseconds: 60000
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+hystrix:
+  threadpool:
+    default:
+      coreSize: 200
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 #management:
 #  endpoints:
 #    web:

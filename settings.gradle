@@ -18,3 +18,5 @@ include 'services:webservice'
 rootProject.name = 'micro-services'
 include "service-eureka"
 include "api-user"
+include "api-shop"
+include "common-core"
