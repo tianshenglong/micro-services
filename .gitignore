@@ -25,7 +25,7 @@ nbdist/
 .nb-gradle/
 
 ### Custom ###
-logs/
+/logs/
 out/
 /api-study/src/main/java/com/yiboshi/dao/YbsCourseStateMapper.java
 ### macOS template
