@@ -87,16 +87,15 @@ project(":api-user") {
 
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-actuator')
-        compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
-        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
-        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
         compile("org.springframework.boot:spring-boot-starter-undertow")
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+
+        compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
 
         compile "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
 
         runtime('org.springframework.boot:spring-boot-devtools')
         testCompile('org.springframework.boot:spring-boot-starter-test')
-        testCompile('org.springframework.security:spring-security-test')
     }
 
     dependencyManagement {

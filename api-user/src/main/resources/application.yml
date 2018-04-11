@@ -2,8 +2,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
-    healthcheck:
-      enabled: true
   instance:
     ip-address: 127.0.0.1
     prefer-ip-address: true
@@ -24,28 +22,28 @@ spring:
     name: api-user
   profiles:
     active: dev
-feign:
-  hystrix:
-    enabled: true
-  okhttp:
-    enabled: true
-hystrix:
-  threadpool:
-    default:
-      coreSize: 200
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,hystrix.stream
-  endpoint:
-    shutdown:
-      enabled: true
-    health:
-      show-details: always
+#feign:
+#  hystrix:
+#    enabled: true
+#  okhttp:
+#    enabled: true
+#hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 200
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,hystrix.stream
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    health:
+#      show-details: always
