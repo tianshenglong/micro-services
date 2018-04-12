@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    ip-address: 127.0.0.1
+    non-secure-port: ${server.port}
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+logging:
+  path: logs
+server:
+  port: 7979
+  undertow:
+    accesslog:
+      enabled: true
+      dir: logs/server
+spring:
+  application:
+    name: service-turbine
+turbine:
+  app-config: api-user,api-shop   #标明监控哪些服务
+  combine-host-port: true
+  instanceUrlSuffix: actuator/hystrix.stream
