@@ -11,7 +11,7 @@
 .springBeans
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -22,12 +22,12 @@ build/
 nbbuild/
 dist/
 nbdist/
+logs/
 .nb-gradle/
 
 ### Custom ###
-/logs/
+logs/
 out/
-/api-study/src/main/java/com/yiboshi/dao/YbsCourseStateMapper.java
 ### macOS template
 # General
 .DS_Store

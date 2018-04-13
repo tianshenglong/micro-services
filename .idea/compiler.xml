@@ -6,6 +6,8 @@
       <module name="api-cms_test" target="1.8" />
       <module name="api-public_main" target="1.8" />
       <module name="api-public_test" target="1.8" />
+      <module name="api-shop_main" target="1.8" />
+      <module name="api-shop_test" target="1.8" />
       <module name="api-study_main" target="1.8" />
       <module name="api-study_test" target="1.8" />
       <module name="api-user_main" target="1.8" />
@@ -20,6 +22,8 @@
       <module name="service-eureka_test" target="1.8" />
       <module name="service-gateway_main" target="1.8" />
       <module name="service-gateway_test" target="1.8" />
+      <module name="service-turbine_main" target="1.8" />
+      <module name="service-turbine_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
