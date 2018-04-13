@@ -36,5 +36,5 @@ zuul:
   routes:
     api-exam:
       path: /api-exam/**
-      url:  http://www.baidu.com/
+      url:  http://www.baidu.com/  #使用url不会走负载，这里只是举个调用外部系统的例子。正常的话是调用微服务组件：url换为 serviceId 值为api-user
   retryable: true    #负载均衡客户端发现远程请求实例不可到达后，去重试其他实例。
