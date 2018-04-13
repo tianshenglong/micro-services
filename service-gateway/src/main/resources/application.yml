@@ -1,0 +1,40 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    registry-fetch-interval-seconds: 3
+  instance:
+    ip-address: 127.0.0.1
+    non-secure-port: ${server.port}
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+    status-page-url: http://${eureka.instance.ip-address}:${server.port}/actuator/info
+    health-check-url: http://${eureka.instance.ip-address}:${server.port}/actuator/health
+    home-page-url: http://${eureka.instance.ip-address}:${server.port}/
+logging:
+  path: logs
+server:
+  port: 8765
+  undertow:
+    accesslog:
+      enabled: true
+      dir: logs/server
+    worker-threads: 500
+spring:
+  application:
+    name: service-gateway
+  profiles:
+    active: dev
+  http:
+    encoding:
+      force: true
+      enabled: true
+      charset: UTF-8
+zuul:
+  routes:
+    api-exam:
+      path: /api-exam/**
+      url:  http://www.baidu.com/
+  retryable: true    #负载均衡客户端发现远程请求实例不可到达后，去重试其他实例。
