@@ -1,7 +1,0 @@
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:21 +0800] "GET / HTTP/1.1" 200 4549
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:21 +0800] "GET /eureka/css/wro.css HTTP/1.1" 200 136561
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:21 +0800] "GET /eureka/images/spring-logo-eureka.png HTTP/1.1" 200 6290
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:21 +0800] "GET /eureka/fonts/varela_round-webfont.woff HTTP/1.1" 200 32712
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:21 +0800] "GET /eureka/fonts/montserrat-webfont.woff HTTP/1.1" 200 24240
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:22 +0800] "GET /eureka/js/wro.js HTTP/1.1" 200 115810
-0:0:0:0:0:0:0:1 - - [10/Apr/2018:15:35:22 +0800] "GET /favicon.ico HTTP/1.1" 200 946
