@@ -5,8 +5,8 @@
 |---|---
 |service-eureka|服务注册中心|
 |common-core|公共工具类|
-|api-user|公共服务|
-|api-shop|微信项目接口|
+|api-user|user|
+|api-shop|shop|
 |service-turbine|熔断聚合监控|
 |service-gateway|网关提供负载均衡、反向代理、权限认证| 
 
