@@ -19,15 +19,15 @@ api-shop 中定义了一个controller，里面只有一个sayHello的方法，ap
 中的代码
 
 #######参考  https://blog.csdn.net/qq_20094989/article/details/79530995
-启动service-turbine ，在浏览器中输入 http://localhost:8100/hystrix  进入熔断监控面板，然后输入
+启动service-turbine ，在浏览器中输入 http://localhost:8100/actuatorhystrix  进入熔断监控面板，然后输入
 http://localhost:8300/actuator/turbine.stream，api-user 需要通过feign 调用下 api-shop，地址：localhost:8300/v1/users/feignShop
 （注意
-springboot 2.0 出现Unable to connect to Command Metric Stream. 所以使用1.5搭建
+springboot 2.0 出现Unable to connect to Command Metric Stream. 
 
 如果使用springboot2.0 和spring cloud Finchley.M8 版本搭建 使用（/actuator/hystrix.stream  而不是/hystrix.stream 为插入点），否则会出现 Unable to connect to Command Metric Stream）
 
 
-##### Hystrix： DashBoard http://localhost:8100/hystrix  页面说明
+##### Hystrix： DashBoard http://localhost:8100/actuator/hystrix.stream  页面说明
         默认的集群监控：通过URLhttp://turbine-hostname:port/turbine.stream开启，实现对默认集群的监控。
         指定的集群监控：通过URLhttp://turbine-hostname:port/turbine.stream?cluster=[clusterName]开启，实现对clusterName集群的监控。
         单体应用的监控：通过URLhttp://hystrix-app:port/hystrix.stream开启，实现对具体某个服务实例的监控。
