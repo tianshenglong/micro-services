@@ -34,3 +34,14 @@ springboot 2.0 出现Unable to connect to Command Metric Stream.
         
         Delay：该参数用来控制服务器上轮询监控信息的延迟时间，默认为2000毫秒，我们可以通过配置该属性来降低客户端的网络和CPU消耗。
         Title：该参数对应了上图头部标题Hystrix Stream之后的内容，默认会使用具体监控实例的URL，我们可以通过配置该信息来展示更合适的标题。
+        
+        
+        
+####分布式配置中心（加密解密）####
+在使用Spring Cloud Config的加密解密功能时，我们需要在配置中心的运行环境中安装不限长度的JCE版本（Unlimited Strength Java Cryptography Extension）。虽然，JCE功能在JRE中自带，但是默认使用的是有长度限制的版本，下载地址如下
+http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
+我们需要将local_policy.jar和US_export_policy.jar两个文件复制到$JAVA_HOME/jre/lib/security目录下，覆盖原来的默认内容。到这里，加密解密的准备工作就完成了。
+
+
+
+增加 swagger2  地址 http://localhost:8400/swagger-ui.html#/
