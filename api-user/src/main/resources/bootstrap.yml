@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      name: apiUser
+      profile: dev
+      uri: http://localhost:8888/
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server

@@ -1,50 +1,55 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-    ip-address: 127.0.0.1
-    prefer-ip-address: true
-    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
-    status-page-url: http://${eureka.instance.ip-address}:${server.port}/actuator/info
-    health-check-url: http://${eureka.instance.ip-address}:${server.port}/actuator/health
-    home-page-url: http://${eureka.instance.ip-address}:${server.port}/
-logging:
-  path: logs
-server:
-  port: 8300
-  undertow:
-    accesslog:
-      enabled: true
-      dir: logs/server
-spring:
-  application:
-    name: api-user
-  profiles:
-    active: dev
-feign:
-  hystrix:
-    enabled: true
-  okhttp:
-    enabled: true
-hystrix:
-  threadpool:
-    default:
-      coreSize: 200
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-#使用熔断聚合监控时，Finchley.M9 版本，Actuator这个包变化了，默认只暴露health等几个端点需要加上如下配置才能 使监控生效
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,hystrix.stream
-  endpoint:
-    shutdown:
-      enabled: true
-    health:
-      show-details: always
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://127.0.0.1:8761/eureka/
+#  instance:
+#    ip-address: 127.0.0.1
+#    prefer-ip-address: true
+#    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+#    status-page-url: http://${eureka.instance.ip-address}:${server.port}/actuator/info
+#    health-check-url: http://${eureka.instance.ip-address}:${server.port}/actuator/health
+#    home-page-url: http://${eureka.instance.ip-address}:${server.port}/
+#logging:
+#  path: logs
+#server:
+#  port: 8300
+#  undertow:
+#    accesslog:
+#      enabled: true
+#      dir: logs/server
+#spring:
+#  application:
+#    name: api-user
+#  profiles:
+#    active: dev
+#feign:
+#  hystrix:
+#    enabled: true
+#  okhttp:
+#    enabled: true
+#hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 200
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
+##使用熔断聚合监控时，Finchley.M9 版本需要 spring boot 2.0，但是boot2.0 Actuator这个包变化了，默认只暴露health等几个端点需要加上如下配置才能 使监控生效
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,hystrix.stream
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    health:
+#      show-details: always
+
+#####################################################spring cloud config begin##################################################
+
+
+#####################################################spring cloud config end##################################################

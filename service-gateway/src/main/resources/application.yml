@@ -32,9 +32,19 @@ spring:
       force: true
       enabled: true
       charset: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,hystrix.stream
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
 zuul:
   routes:
     api-exam:
       path: /api-exam/**
-      url:  http://www.baidu.com/  #Ê¹ÓÃurl²»»á×ß¸ºÔØ£¬ÕâÀïÖ»ÊÇ¾Ù¸öµ÷ÓÃÍâ²¿ÏµÍ³µÄÀı×Ó¡£Õı³£µÄ»°ÊÇµ÷ÓÃÎ¢·şÎñ×é¼ş£ºurl»»Îª serviceId ÖµÎªapi-user
-  retryable: true    #¸ºÔØ¾ùºâ¿Í»§¶Ë·¢ÏÖÔ¶³ÌÇëÇóÊµÀı²»¿Éµ½´ïºó£¬È¥ÖØÊÔÆäËûÊµÀı¡£
+      url:  http://www.baidu.com/ #ä½¿ç”¨urlä¸ä¼šèµ°è´Ÿè½½ï¼Œè¿™é‡Œåªæ˜¯ä¸¾ä¸ªè°ƒç”¨å¤–éƒ¨ç³»ç»Ÿçš„ä¾‹å­ã€‚æ­£å¸¸çš„è¯æ˜¯è°ƒç”¨å¾®æœåŠ¡ç»„ä»¶ï¼šurlæ¢ä¸º serviceId å€¼ä¸ºapi-user
+  retryable: true #è´Ÿè½½å‡è¡¡å®¢æˆ·ç«¯å‘ç°è¿œç¨‹è¯·æ±‚å®ä¾‹ä¸å¯åˆ°è¾¾åï¼Œå»é‡è¯•å…¶ä»–å®ä¾‹ã€‚

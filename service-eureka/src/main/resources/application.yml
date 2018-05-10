@@ -16,3 +16,21 @@ spring:
     name: service-eureka
   profiles:
     active: dev  #指定启动 application-dev.yml 文件
+
+
+
+#######################################spring cloud config begin#########################################
+
+#spring:
+#  application:
+#    name: service-eureka
+#logging:
+#  path: logs
+#server:
+#  port: 8761
+#  undertow:
+#    accesslog:
+#      enabled: true
+#      dir: logs/server
+
+#######################################spring cloud config end#########################################

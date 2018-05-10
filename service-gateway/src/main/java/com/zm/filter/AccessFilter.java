@@ -21,12 +21,7 @@ public class AccessFilter extends ZuulFilter {
 
     //需要排除拦截的地址
     public final static ImmutableList<String> EXCLUDE_PATH = ImmutableList.of(
-            "/api-weixin/v1/manageUser/login",
-            "/api-study/v1/users/login",
-            "/api-study/v1/wxUser/bandUser",
-            "/api-study/v1//adminUser/login",
-            "/api-public/v1/pay/wxOrderCallback",
-            "/api-public/v1/pay/aliPayOrderCallback");
+            "/api-weixin/v1/manageUser/login");
 
     /**
      * 过滤器的类型，它决定过滤器在请求的哪个生命周期中执行。这里定义为pre，代表会在请求被路由之前执行。
