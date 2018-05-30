@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="api-cms_main" target="1.8" />
       <module name="api-cms_test" target="1.8" />
+      <module name="api-product_main" target="1.8" />
+      <module name="api-product_test" target="1.8" />
       <module name="api-public_main" target="1.8" />
       <module name="api-public_test" target="1.8" />
       <module name="api-shop_main" target="1.8" />
@@ -16,8 +18,14 @@
       <module name="api-weixin_test" target="1.8" />
       <module name="common-core_main" target="1.8" />
       <module name="common-core_test" target="1.8" />
+      <module name="micro-services-service-config_main" target="1.8" />
+      <module name="micro-services-service-config_test" target="1.8" />
       <module name="monitor-hystrix-dashboard-turbine_main" target="1.8" />
       <module name="monitor-hystrix-dashboard-turbine_test" target="1.8" />
+      <module name="service-config_main" target="1.8" />
+      <module name="service-config_test" target="1.8" />
+      <module name="service-configs_main" target="1.8" />
+      <module name="service-configs_test" target="1.8" />
       <module name="service-eureka_main" target="1.8" />
       <module name="service-eureka_test" target="1.8" />
       <module name="service-gateway_main" target="1.8" />
