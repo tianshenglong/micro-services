@@ -31,7 +31,7 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot中使用Swagger2构建RESTful APIs")
+                .title("Spring Boot中使用Swagger2构建RESTful APIs  啊撒旦发送发送发放")
                 .description("有问题找土爷")
                 .termsOfServiceUrl("https://github.com/tianshenglong/micro-services")
                 .contact("土爷")
