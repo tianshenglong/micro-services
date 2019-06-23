@@ -9,9 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api-product" />
             <option value="$PROJECT_DIR$/api-shop" />
             <option value="$PROJECT_DIR$/api-user" />
             <option value="$PROJECT_DIR$/common-core" />
+            <option value="$PROJECT_DIR$/service-configs" />
             <option value="$PROJECT_DIR$/service-eureka" />
             <option value="$PROJECT_DIR$/service-gateway" />
             <option value="$PROJECT_DIR$/service-turbine" />

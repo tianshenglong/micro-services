@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-product/api-product.iml" filepath="$PROJECT_DIR$/api-product/api-product.iml" group="api-product" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-product/api-product_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-product/api-product_main.iml" group="api-product" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-product/api-product_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-product/api-product_test.iml" group="api-product" />
       <module fileurl="file://$PROJECT_DIR$/api-shop/api-shop.iml" filepath="$PROJECT_DIR$/api-shop/api-shop.iml" group="api-shop" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-shop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-shop_main.iml" group="api-shop" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-shop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-shop_test.iml" group="api-shop" />
@@ -12,6 +15,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-core/common-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-core/common-core_main.iml" group="common-core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-core/common-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/common-core/common-core_test.iml" group="common-core" />
       <module fileurl="file://$PROJECT_DIR$/micro-services.iml" filepath="$PROJECT_DIR$/micro-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-config/service-config.iml" filepath="$PROJECT_DIR$/service-config/service-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-config/service-config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-config/service-config_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-config/service-config_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-config/service-config_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-configs/service-configs.iml" filepath="$PROJECT_DIR$/service-configs/service-configs.iml" group="service-configs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-configs_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-configs_main.iml" group="service-configs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-configs_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-configs_test.iml" group="service-configs" />
       <module fileurl="file://$PROJECT_DIR$/service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/service-eureka/service-eureka.iml" group="service-eureka" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-eureka_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-eureka_main.iml" group="service-eureka" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-eureka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-eureka_test.iml" group="service-eureka" />
