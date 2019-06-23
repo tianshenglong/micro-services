@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.133.129:3306/study?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    username: devuser
+    password: Yhbj_1102
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 10
